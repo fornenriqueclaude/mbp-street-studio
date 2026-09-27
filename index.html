@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MBP Street Studio · Barbería</title>
+  <meta name="description" content="MBP Street Studio — barbería urbana. Cortes, degradados, barba y cejas. Est. 2024.">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__brand" aria-label="MBP Street Studio, inicio">
+      <span class="marker">MBP</span>
+      <span class="nav__brand-sub">Street Studio</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#estudio">El estudio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn--red btn--sm">Reservar</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="parallax-bg" data-speed="0.35">
+      <img src="img/fachada.jpg" alt="" aria-hidden="true">
+    </div>
+    <div class="hero__shade"></div>
+    <div class="smoke smoke--1" data-speed="-0.15"></div>
+    <div class="smoke smoke--2" data-speed="0.2"></div>
+
+    <div class="hero__content" data-speed="-0.12">
+      <img class="hero__logo" src="img/logo.png" alt="MBP Street Studio — Est. 2024">
+      <p class="hero__tag">Barbería urbana · Fades · Barba · Estilo</p>
+      <div class="hero__cta">
+        <a href="#contacto" class="btn btn--red">Reserva tu cita</a>
+        <a href="#servicios" class="btn btn--ghost">Ver precios</a>
+      </div>
+    </div>
+
+    <a href="#estudio" class="scroll-cue" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Fades</span><i>✦</i><span>Degradados</span><i>✦</i><span>Barba</span><i>✦</i><span>Cejas</span><i>✦</i><span>Side part</span><i>✦</i><span>Texturizados</span><i>✦</i>
+      <span>Fades</span><i>✦</i><span>Degradados</span><i>✦</i><span>Barba</span><i>✦</i><span>Cejas</span><i>✦</i><span>Side part</span><i>✦</i><span>Texturizados</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ESTUDIO -->
+  <section class="studio" id="estudio">
+    <span class="bg-word" data-speed="0.25" aria-hidden="true">STREET</span>
+    <div class="container studio__grid">
+      <div class="studio__text reveal">
+        <p class="eyebrow">El estudio</p>
+        <h2 class="title">Cultura de calle,<br><span class="marker red">precisión</span> de barbero.</h2>
+        <p>En MBP Street Studio cada corte se trabaja al detalle: degradados limpios, líneas marcadas y acabados que duran. Un espacio con actitud urbana donde vienes a desconectar y sales con tu mejor versión.</p>
+        <ul class="studio__facts">
+          <li><strong>2024</strong><span>Abrimos puertas</span></li>
+          <li><strong>100%</strong><span>Trato personal</span></li>
+          <li><strong>0</strong><span>Cortes con prisa</span></li>
+        </ul>
+      </div>
+
+      <div class="studio__media">
+        <div class="pole" aria-hidden="true" data-speed="-0.2"><div class="pole__stripes"></div></div>
+        <figure class="studio__photo reveal" data-speed="-0.08">
+          <img src="img/trabajo-side-part.jpg" class="crop-edge" alt="Cliente con corte side part y taper en MBP Street Studio" loading="lazy">
+        </figure>
+        <div class="studio__badge" data-speed="0.12">
+          <span class="marker">Est.</span>
+          <span>2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="parallax-bg parallax-bg--dim" data-speed="0.3">
+      <img src="img/trabajo-textured-fade.jpg" alt="" aria-hidden="true">
+    </div>
+    <div class="services__shade"></div>
+
+    <div class="container services__inner">
+      <header class="section-head reveal">
+        <p class="eyebrow">Carta de servicios</p>
+        <h2 class="title">Precios <span class="marker red">claros</span></h2>
+      </header>
+
+      <ol class="menu">
+        <li class="menu__item reveal">
+          <div class="menu__row"><h3>Corte</h3><span class="menu__dots"></span><span class="menu__price">10€</span></div>
+          <p class="menu__meta">30 min · Degradado, tijera o máquina, a tu estilo</p>
+        </li>
+        <li class="menu__item reveal">
+          <div class="menu__row"><h3>Barba</h3><span class="menu__dots"></span><span class="menu__price">5€</span></div>
+          <p class="menu__meta">15 min · Perfilado y arreglo</p>
+        </li>
+        <li class="menu__item reveal">
+          <div class="menu__row"><h3>Cejas</h3><span class="menu__dots"></span><span class="menu__price">4€</span></div>
+          <p class="menu__meta">10 min · Limpieza y diseño</p>
+        </li>
+        <li class="menu__item menu__item--combo reveal">
+          <div class="menu__row"><h3>Corte + Barba</h3><span class="menu__dots"></span><span class="menu__price">12€</span></div>
+          <p class="menu__meta">35 min · El combo clásico</p>
+        </li>
+        <li class="menu__item menu__item--combo menu__item--star reveal">
+          <span class="menu__flag">Más pedido</span>
+          <div class="menu__row"><h3>Corte + Barba + Cejas</h3><span class="menu__dots"></span><span class="menu__price">15€</span></div>
+          <p class="menu__meta">35 min · El pack completo</p>
+        </li>
+      </ol>
+
+      <div class="services__cta reveal">
+        <a href="#contacto" class="btn btn--red">Pedir cita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BAND -->
+  <section class="band">
+    <div class="parallax-bg" data-speed="0.3">
+      <img src="img/fachada.jpg" alt="" aria-hidden="true">
+    </div>
+    <div class="band__shade"></div>
+    <blockquote class="band__quote reveal" data-speed="-0.1">
+      <span class="marker">Tu estilo,</span>
+      <span class="band__line">nuestra firma</span>
+    </blockquote>
+  </section>
+
+  <!-- TRABAJOS -->
+  <section class="works" id="trabajos">
+    <span class="bg-word bg-word--right" data-speed="-0.2" aria-hidden="true">STUDIO</span>
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">Trabajos</p>
+        <h2 class="title">Recién <span class="marker red">salidos</span> de la silla</h2>
+      </header>
+
+      <div class="works__grid">
+        <figure class="work work--a" data-speed="-0.06">
+          <div class="work__img reveal"><img src="img/trabajo-side-part.jpg" class="crop-edge" alt="Side part con taper y raya marcada" loading="lazy"></div>
+          <figcaption><span class="work__num">01</span> Side part · Taper</figcaption>
+        </figure>
+        <figure class="work work--b" data-speed="0.1">
+          <div class="work__img reveal"><img src="img/trabajo-textured-fade.jpg" alt="Texturizado ondulado con low fade" loading="lazy"></div>
+          <figcaption><span class="work__num">02</span> Texturizado · Low fade</figcaption>
+        </figure>
+      </div>
+
+      <p class="works__more reveal">Más trabajos en nuestro <a href="#" class="link">Instagram</a></p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="parallax-bg parallax-bg--dim" data-speed="0.3">
+      <img src="img/fachada.jpg" alt="" aria-hidden="true">
+    </div>
+    <div class="contact__shade"></div>
+
+    <div class="container contact__grid">
+      <div class="contact__intro reveal">
+        <p class="eyebrow">Visítanos</p>
+        <h2 class="title">Reserva tu <span class="marker red">cita</span></h2>
+        <p>Busca la pared negra con el poste de barbero. No tiene pérdida.</p>
+        <div class="contact__cta">
+          <a href="#" class="btn btn--red">Reservar online</a>
+          <a href="#" class="btn btn--ghost">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact__cards">
+        <div class="card reveal">
+          <h3>Dónde</h3>
+          <p>Calle Ejemplo, 00<br>00000 Ciudad</p>
+          <a href="#" class="link">Cómo llegar →</a>
+        </div>
+        <div class="card reveal">
+          <h3>Horario</h3>
+          <dl class="hours">
+            <div><dt>Lun – Vie</dt><dd>10:00 – 14:00 · 16:00 – 20:30</dd></div>
+            <div><dt>Sábado</dt><dd>10:00 – 14:00</dd></div>
+            <div><dt>Domingo</dt><dd>Cerrado</dd></div>
+          </dl>
+        </div>
+        <div class="card reveal">
+          <h3>Contacto</h3>
+          <p><a href="tel:+34600000000" class="link">600 000 000</a></p>
+          <p><a href="#" class="link">@mbpstreetstudio</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="pole pole--h" aria-hidden="true"><div class="pole__stripes"></div></div>
+    <div class="container footer__inner">
+      <a href="#inicio" class="nav__brand">
+        <span class="marker">MBP</span>
+        <span class="nav__brand-sub">Street Studio</span>
+      </a>
+      <p>© <span id="year">2026</span> MBP Street Studio · Barber</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
